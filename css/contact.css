@@ -165,154 +165,62 @@ button {
 
 /*FOOTER*/
 
-@media (max-width: 768px) {
-  footer {
-      flex-direction: column;
-      text-align: center;
+.main-content {
+  flex: 1; /* Esto asegura que el contenido principal ocupe todo el espacio disponible */
+}
+
+.footer {
+  background-color: #435983;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto; /* Hace que el footer se mantenga al fondo */
+}
+
+.footer-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.footer-nav ul li a {
+  color: #2b1609;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .seccion, .taller-section {
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
   }
-  footer div {
-      text-align: center !important;
+  .contenido, .taller-content {
+    flex: 1;
+    padding: 20px;
+  }
+  .seccion img, .taller-images img {
+    max-width: 45%;
   }
 }
 
-/* Responsividad */
-@media (max-width: 992px) {
-  .form-container {
-    width: 80%;
+@media (max-width: 767px) {
+  .seccion img, .taller-images img {
+    max-width: 90%;
   }
-
-  footer {
+  .taller-section {
     flex-direction: column;
-    text-align: center;
   }
-
-  footer div {
-    margin-bottom: 15px;
-  }
-
-  footer div:last-child {
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .form-container {
-    width: 90%;
-  }
-
-  .form-container h2 {
-    font-size: 1.5rem;
-  }
-
-  .form-container p {
-    font-size: 0.9rem;
-  }
-
-  .navbar-brand img {
-    width: 120px;
-  }
-
-  .menu-icon {
-    font-size: 24px;
-  }
-
-  .social a i {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 576px) {
-  .form-container {
-    width: 95%;
+  .inscribete-btn {
+    width: 100%;
     padding: 15px;
-  }
-
-  .form-container h2 {
-    font-size: 1.3rem;
-  }
-
-  .form-container p,
-  .form-container input,
-  .form-container textarea {
-    font-size: 0.85rem;
-  }
-
-  footer p {
-    font-size: 0.8rem;
-  }
-
-  footer img {
-    height: 40px;
-  }
-
-  .social a i {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 200px) {
-  /* Navbar */
-  .navbar-brand img.logo-infodis {
-    width: 100px;
-    height: auto;
-  }
-
-  .navbar-toggler {
-    font-size: 12px;
-    padding: 4px 8px;
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 10px;
-  }
-
-  /* Formulario */
-  .form-container {
-    padding: 10px;
-  }
-
-  .form-container h2 {
-    font-size: 14px;
-  }
-
-  .form-container p {
-    font-size: 10px;
-  }
-
-  .form-container input,
-  .form-container textarea {
-    font-size: 10px;
-    padding: 6px;
-  }
-
-  .form-container button {
-    font-size: 10px;
-    padding: 6px 12px;
-  }
-
-  /* Footer */
-  footer {
-    flex-direction: column;
-    text-align: center;
-    padding: 10px;
-  }
-
-  footer p,
-  footer a {
-    font-size: 10px;
-  }
-
-  footer .social a i {
-    font-size: 12px;
-    margin: 0 4px;
-  }
-
-  footer img {
-    height: 30px;
+    font-size: 18px;
   }
 }
 
 body{
   font-family: Poppins;
 }
-
