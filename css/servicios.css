@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* aqui lo cards*/
+.card {
+    width: 350px;
+    padding: 70px 0px;
+    background: #f6f9fc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transition: 0.3s;
+    margin-left: 30px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card:hover img {
+    opacity: 1;
+}
+
+.card-content {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    
+}
+/* Centrar todo el contenido */
+.general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+.servicios {
+    display: flex;
+    justify-content: center; /* Centra las cards */
+    flex-wrap: wrap; /* Permite que bajen en pantallas pequeñas */
+    gap: 20px; /* Espacio entre cards */
+}
+
+/* Contenedor principal */
+.second_container {
+    max-width: 1200px;
+    width: 100%;
+}
+/*probando
+.letra:hover{
+   color: rgb(250, 185, 5);
+}*/
+.card-content:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px black; /* Contorno negro */
+}
+
+.card-content:hover #sidePanel {
+    color:rgb(37, 24, 24); /* Mantiene el panel sin cambios */
+    text-shadow:none;
+}
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.boton-icon a{
+    color: #FCCB00;
+}
+
+.boton-icon{
+    color: #FCCB00;
+}
+
+body{
+    font-family: Poppins;
+  }
+  @media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    footer div {
+        text-align: center !important;
+    }
+}

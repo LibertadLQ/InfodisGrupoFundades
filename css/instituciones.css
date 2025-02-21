@@ -1,0 +1,512 @@
+  /* Responsive navbar*/
+  @media (max-width: 768px) {
+    .navbar-toggler {
+      width: 45px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      background-color: transparent;
+    }
+  
+    .menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+    }
+  
+    .navbar-nav {
+      text-align: left;
+      display: none;
+      flex-direction: column;
+      background-color: #e5f6f8;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+      padding: 10px 0;
+    }
+  
+    .navbar-nav.show {
+      display: flex;
+    }
+  }
+  
+  /* Pantallas grandes */
+  @media (min-width: 769px) {
+    .navbar-brand, .navbar-nav {
+      display: flex;
+      align-items: center;
+    }
+  
+    .logo-infodis {
+      height: 55px;
+    }
+  
+    .navbar-nav .nav-item {
+      margin-left: 15px;
+    }
+  }
+
+body {
+    font-family: 'Questrial', sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 80px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Alinea verticalmente */
+    max-width: 1200px; /* Ajusta el ancho máximo según tu diseño */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.header-logo {
+    height: 50px; /* Ajusta el tamaño según tu necesidad */
+    margin-right: 20px; /* Espacio entre el logo y el título */
+}
+
+.header-title {
+    font-size: 24px; 
+    margin: 0; 
+    color: #3d1f0e;
+}
+
+
+h2, p{
+    color: #3d1f0e;
+}
+
+
+label{
+    font-weight: bold;
+}
+
+
+.contenido {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    justify-content: center; /* Centra los elementos */
+    gap: 40px; /* Reduce la separación entre texto e imagen */
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en pantallas pequeñas */
+}
+
+.info {
+    flex: 1; /* Ocupará el espacio disponible */
+    max-width: 600px;
+}
+
+.imagen {
+    flex: 1; /* Ocupará el espacio disponible */
+    max-width: 50%; /* Permite que la imagen sea más grande */
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Ajusta la altura sin distorsionar */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover; /* Evita que se deforme */
+}
+
+.imagen img:hover {
+    transform: scale(1.05); /* Efecto de zoom */
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-download:hover {
+    background-color: #e68a00;
+}
+
+@media (max-width: 768px) {
+    .contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagen {
+        max-width: 80%; 
+    }
+}
+
+
+.main-content {
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+}
+
+.card {
+    padding: 5px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+    cursor: pointer;
+    overflow: hidden;
+    flex: 1 1 calc(25% - 20px); /* 4 tarjetas por fila */
+    max-width: 350px; /* Controla el ancho máximo de las tarjetas */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+}
+
+
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    margin: 10px 0;
+}
+
+.card-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.caja {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    gap: 10px;
+}
+
+.caja button,
+.caja a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: #00485E;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.caja button:hover,
+.caja a:hover {
+    background-color: #FCCB00;
+    transform: scale(1.2);
+}
+
+.caja i {
+    font-size: 22px;
+}
+
+.card p {
+    text-align: left;
+    font-size: 14px;
+    margin: 5px 0;
+    color: #2b1609;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+
+    .caja {
+        flex-wrap: wrap;
+    }
+}
+
+
+.instrucciones-filtro {
+    background-color: #F9ECC9; /* Fondo claro */
+    border: 1px solid #fff; /* Borde suave */
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 12px;
+    font-family: 'Questrial', sans-serif;
+    color: #333; /* Texto oscuro */
+    max-width: 400px; /* Tamaño más pequeño */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra para efecto flotante */
+    text-align: center; /* Centrar texto */
+    position: relative; /* Posición relativa para animaciones futuras */
+}
+
+.instrucciones-filtro h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #ddd784; /* Color destacado para el título */
+    text-align: center;
+}
+
+.instrucciones-filtro p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.instrucciones-filtro ul {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.instrucciones-filtro ul li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.instrucciones-filtro ul li:before {
+    content: '•'; /* Personalizar viñeta */
+    color: #eedc39; /* Color de viñeta */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.instrucciones-filtro {
+    animation: fadeIn 0.5s ease-in-out; /* Animación al aparecer */
+}
+
+
+.backgroud-hero-banner {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("https://www.defensoria.gob.pe/wp-content/uploads/2022/05/Loreto_accesibilidad.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 800px;
+    padding: 0 15px; 
+
+    @media (max-width: 768px) {
+        height: auto;
+        padding: 30px 20px; 
+    }
+}
+
+.container-hero-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 40px; 
+    max-width: 1200px; 
+    width: 100%;
+    padding: 0 40px; 
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.column-1 {
+    flex: 2;
+}
+
+.column-1 h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 46px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+    width: 80%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        font-size: 36px;
+    }
+}
+
+.column-1 p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.7; 
+    width: 80%;
+    font-weight: 300;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.column-2 { 
+    flex: 1;
+}
+
+.container-form {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .title {
+            font-size: 26px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-family: 'Poppins';
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            label{
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+        }
+
+        select,
+        input[type="date"] {
+            padding: 18px 150px;
+            font-size: 14px;
+            border: 1px solid #ffd62f;
+            border-radius: 5px;
+            font-family: 'Poppins';
+        }
+
+        .btn-search {
+            background-color: #FCCB00;
+            color: white;
+            padding: 15px 0;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            border-radius: 5px;
+            border-color: #FCCB00;
+        }
+
+        select:focus
+        input[type="date"]:focus {
+            border-color: #fff ;
+            outline: none;
+        }
+
+
+    }
+
+}
+
+@media(max-width: 760px) {
+
+    .column-1{
+        flex: auto;
+
+        h1{
+            font-size: 36px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    .container-form {
+        width: 100%;
+
+        .form{
+            .title{
+                font-size: 23px;
+                margin-bottom: 10px;
+            }
+
+            .btn-search {
+                font-size: 14px;
+            }
+        }
+    }
+}
+.instituciones-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+.card-container{
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+/*FOOTER*/
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    footer div {
+        text-align: center !important;
+    }
+}
+
+  .boton-icon a{
+    color: #FCCB00;
+}
+
+.boton-icon{
+    color: #FCCB00;
+}
+
+body{
+    font-family: Poppins;
+  }

@@ -1,0 +1,255 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(https://i.pinimg.com/736x/bd/8d/22/bd8d2293e29a93f41fca0ccd1799d980.jpg);
+  background-size: cover;      /* Ajusta la imagen para que cubra todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* Fija la imagen mientras se desplaza la página */
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-toggler {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+  }
+
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .navbar-nav {
+    text-align: left;
+    display: none;
+    flex-direction: column;
+    background-color: #e5f6f8;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .navbar-nav.show {
+    display: flex;
+  }
+}
+
+/* Pantallas grandes */
+@media (min-width: 769px) {
+  .navbar-brand, .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-infodis {
+    height: 55px;
+  }
+
+  .navbar-nav .nav-item {
+    margin-left: 15px;
+  }
+}
+
+.form-container {
+  background-color: #ffffff;
+  width: 50%;
+  padding: 30px;
+  margin: 80px 25% ;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form-container p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-container p a {
+  color: #00485E;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+button {
+  background-color: #FCCB00;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.contact-cards .card {
+  width: 18rem;
+  background-color: rgb(250, 249, 240);
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card .card-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card .btn {
+  margin-top: 10px;
+}
+
+.btn-custom {
+  background-color: #00485E;
+  color: white;
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #003746; /* Un tono más oscuro para el efecto hover */
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    width: 90%;
+  }
+}
+
+/*FOOTER*/
+
+@media (max-width: 768px) {
+  footer {
+      flex-direction: column;
+      text-align: center;
+  }
+  footer div {
+      text-align: center !important;
+  }
+}
+
+/* Responsividad */
+@media (max-width: 992px) {
+  .form-container {
+    width: 80%;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer div {
+    margin-bottom: 15px;
+  }
+
+  footer div:last-child {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    width: 90%;
+  }
+
+  .form-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-container p {
+    font-size: 0.9rem;
+  }
+
+  .navbar-brand img {
+    width: 120px;
+  }
+
+  .menu-icon {
+    font-size: 24px;
+  }
+
+  .social a i {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .form-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .form-container p,
+  .form-container input,
+  .form-container textarea {
+    font-size: 0.85rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+
+  footer img {
+    height: 40px;
+  }
+
+  .social a i {
+    font-size: 16px;
+  }
+}
+
+body{
+  font-family: Poppins;
+}

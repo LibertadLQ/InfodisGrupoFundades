@@ -1,0 +1,221 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body {
+ background-image: url(https://i.pinimg.com/736x/bd/8d/22/bd8d2293e29a93f41fca0ccd1799d980.jpg);
+ background-size: cover;      
+ background-position: center; 
+ background-repeat: no-repeat; 
+ background-attachment: fixed; 
+ font-family: Arial, sans-serif;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+ .navbar-toggler {
+   width: 45px;
+   height: 45px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: none;
+   background-color: transparent;
+ }
+
+ .menu-icon {
+   font-size: 24px;
+   cursor: pointer;
+ }
+
+ .navbar-nav {
+   text-align: left;
+   display: none;
+   flex-direction: column;
+   background-color: #e5f6f8;
+   position: absolute;
+   top: 100%;
+   right: 0;
+   width: 100%;
+   padding: 10px 0;
+ }
+
+ .navbar-nav.show {
+   display: flex;
+ }
+}
+
+/* Pantallas grandes */
+@media (min-width: 769px) {
+ .navbar-brand, .navbar-nav {
+   display: flex;
+   align-items: center;
+ }
+
+ .logo-infodis {
+   height: 55px;
+ }
+
+ .navbar-nav .nav-item {
+   margin-left: 15px;
+ }
+}
+
+/* Colores */
+
+:root {
+ --color-texto: #000000;
+ --color-boton: #fcba03;
+ --color-boton-hover: #d6a002;
+ --color-boton-texto: #0e0e0e;
+ --color-link: #292312;
+ --color-link-hover: #d6a002;
+}
+
+/* Estilos generales */
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+
+h2 {
+ font-weight: 600;
+ font-size: 2.5rem;
+ text-align: center;
+ margin: 1.5rem 0;
+}
+
+a {
+ color: var(--color-link);
+ text-decoration: none;
+ transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+ color: var(--color-link-hover);
+}
+
+/* Estilos del formulario */
+form {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ margin: 0 auto;
+ padding: 2rem;
+ border-radius: 1rem;
+ max-width: 35rem;
+}
+
+input[type="email"],
+input[type="password"] {
+ background-color: transparent;
+ border: none;
+ border-bottom: 3px solid var(--color-boton); /* Línea amarilla */
+ color: var(--color-texto);
+ font-size: 1.2rem;
+ font-family: 'Roboto', sans-serif;
+ padding: 10px;
+ margin-bottom: 15px;
+ width: 100%;
+ text-align: center;
+}
+input:focus {
+ outline: none;
+ border-bottom: 3px solid var(--color-boton-hover);
+}
+
+label {
+ font-size: 1.25rem;
+ margin-bottom: 0.5rem;
+}
+
+
+button {
+ width: 100%;
+ padding: 10px;
+ background-color: var(--color-boton);
+ color: var(--color-boton-texto);
+ border: none;
+ border-radius: 10px;
+ font-size: 1.2rem;
+ font-weight: bold;
+ cursor: pointer;
+}
+
+button, input, optgroup, select, textarea {
+ margin: 0;
+ font-family: inherit;
+ font-size: inherit;
+ line-height: inherit;
+}
+
+button:hover {
+ background-color: var(--color-boton-hover);
+}
+
+
+button[type='submit']:hover {
+ background-color: var(--color-boton-hover);
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+ form {
+   max-width: none;
+ }
+}
+
+main {
+ flex: 1; /* Permite que el contenido principal ocupe el espacio disponible */
+}
+
+.cont {
+ background-color: rgba(255, 255, 255, 0.9);
+ margin: 50px auto;
+ border-radius: 10px;
+ padding: 20px;
+ width: 90%;
+ max-width: 400px;
+ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+ text-align: center;
+}
+
+input:focus {
+ outline: none;
+ border-bottom: 3px solid var(--color-boton-hover);
+}
+footer {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 20px;
+ background-color: #f8f8f8;
+ border-top: 1px solid #e7e7e7;
+ margin-top: 230px; /* Asegúrate de que el footer esté al final */
+}
+
+
+@media (max-width: 768px) {
+ .cont {
+   width: 95%;
+ }
+
+ input {
+   font-size: 1rem;
+   padding: 8px;
+ }
+}
+@media (max-width: 768px) {
+  footer {
+      flex-direction: column;
+      text-align: center;
+  }
+  footer div {
+      text-align: center !important;
+  }
+}
