@@ -250,6 +250,69 @@ button {
   }
 }
 
+@media (max-width: 200px) {
+  /* Navbar */
+  .navbar-brand img.logo-infodis {
+    width: 100px;
+    height: auto;
+  }
+
+  .navbar-toggler {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 10px;
+  }
+
+  /* Formulario */
+  .form-container {
+    padding: 10px;
+  }
+
+  .form-container h2 {
+    font-size: 14px;
+  }
+
+  .form-container p {
+    font-size: 10px;
+  }
+
+  .form-container input,
+  .form-container textarea {
+    font-size: 10px;
+    padding: 6px;
+  }
+
+  .form-container button {
+    font-size: 10px;
+    padding: 6px 12px;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  footer p,
+  footer a {
+    font-size: 10px;
+  }
+
+  footer .social a i {
+    font-size: 12px;
+    margin: 0 4px;
+  }
+
+  footer img {
+    height: 30px;
+  }
+}
+
 body{
   font-family: Poppins;
 }
+
