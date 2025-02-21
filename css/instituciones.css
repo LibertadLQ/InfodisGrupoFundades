@@ -510,3 +510,42 @@ label{
 body{
     font-family: Poppins;
   }
+
+@media (max-width: 200px) { .navbar { flex-direction: column; align-items: flex-start; }
+
+      .navbar-brand img { width: 80px; height: auto; }
+      
+      .navbar-toggler { font-size: 14px; }
+      
+      .navbar-nav { flex-direction: column; width: 100%; }
+      
+      .navbar-nav .nav-item { margin: 5px 0; }
+      
+      .container-hero-banner { flex-direction: column; padding: 10px; }
+      
+      .column-1 h1 { font-size: 16px; }
+      
+      .column-1 p, .column-1 h2 { font-size: 12px; margin: 10px 0; }
+      
+      .boton-icon { font-size: 16px; padding: 8px; }
+      
+      .container-form { width: 100%; padding: 10px; }
+      
+      .form-group label { font-size: 12px; }
+      
+      .form-group input, .form-group select { width: 100%; font-size: 12px; padding: 10px; }
+      
+      .btn-search { width: 100%; font-size: 14px; padding: 8px; }
+      
+      .modal-content { font-size: 12px; }
+      
+      .main-content { padding: 10px; }
+      
+      #card-container { grid-template-columns: 1fr; gap: 10px; }
+      
+      footer { flex-direction: column; text-align: center; }
+      
+      footer p, footer a { font-size: 10px; }
+      
+      footer img { height: 40px; } 
+    }
